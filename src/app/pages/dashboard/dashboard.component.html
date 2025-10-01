@@ -1,0 +1,89 @@
+<div class="container-fluid">
+    <div class="header-wrap">
+        <h3>Dashboard</h3>
+         <button class="btn-primary" mat-flat-button>Add Project</button>
+    </div>
+  <div class="flex">
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-content>
+         <mat-card-title>Total Projects</mat-card-title>
+        <h4>25</h4>
+        <p>
+            This number represents all active, completed, and in-progress projects handled by the team across various departments and timelines.
+        </p>
+        <small>Increased from last month</small>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-content>
+         <mat-card-title>Ended Projects</mat-card-title>
+        <h4>34</h4>
+        <p>
+            This number represents all active, completed, and in-progress projects handled by the team across various departments and timelines.
+        </p>
+        <small>Increased from last month</small>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-content>
+         <mat-card-title>Running Projects</mat-card-title>
+        <h4>25</h4>
+        <p>
+            This number represents all active, completed, and in-progress projects handled by the team across various departments and timelines.
+        </p>
+        <small>Increased from last month</small>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-content>
+         <mat-card-title>Pending Projects</mat-card-title>
+        <h4>67</h4>
+        <p>
+            This number represents all active, completed, and in-progress projects handled by the team across various departments and timelines.
+        </p>
+        <small>Increased from last month</small>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-content>
+         <mat-card-title>Total Projects</mat-card-title>
+        <h4>98</h4>
+        <p>
+            This number represents all active, completed, and in-progress projects handled by the team across various departments and timelines.
+        </p>
+        <small>Increased from last month</small>
+      </mat-card-content>
+    </mat-card>
+  </div>
+<table mat-table [dataSource]="products" class="data-table">
+
+  <!-- ID Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef>No.</th>
+    <td mat-cell *matCellDef="let project">{{ project.id }}</td>
+  </ng-container>
+
+  <!-- Category Column -->
+  <ng-container matColumnDef="category">
+    <th mat-header-cell *matHeaderCellDef>Category</th>
+    <td mat-cell *matCellDef="let project">{{ project.category }}</td>
+  </ng-container>
+
+  <!-- Count Column -->
+  <ng-container matColumnDef="count">
+    <th mat-header-cell *matHeaderCellDef>Total</th>
+    <td mat-cell *matCellDef="let project">{{ project.count }}</td>
+  </ng-container>
+
+  <!-- Note Column -->
+  <ng-container matColumnDef="note">
+    <th mat-header-cell *matHeaderCellDef>Description</th>
+    <td mat-cell *matCellDef="let project">{{ project.note }}</td>
+  </ng-container>
+
+  <!-- Header and Row Declarations -->
+  <tr mat-header-row *matHeaderRowDef="['id', 'category', 'count', 'note']"></tr>
+  <tr mat-row *matRowDef="let row; columns: ['id', 'category', 'count', 'note']"></tr>
+</table>
+
+</div>

@@ -1,1 +1,92 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.flex {
+  display: flex;
+  margin: 0 -10px;
+}
+.container-fluid {
+  margin: 0.9375rem 1.25rem;
+}
+.mat-mdc-card-header {
+  background-color: var(--warn);
+}
+
+.header {
+  background-color: var(--primary);
+  color: var(--accent);
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header button.mat-button {
+  color: var(--accent);
+  font-weight: 500;
+  text-transform: none;
+}
+
+.mat-menu-panel {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.menu-header {
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.custom-toolbar {
+  background-color: var(--primary) !important;
+}
+.mat-mdc-button .mdc-button__label {
+  color: var(--accent);
+}
+.nav-container {
+  padding: 0 30px;
+}
+.mat-mdc-button > .mat-icon {
+  display: none !important;
+}
+.data-table {
+  margin-top: 2rem;
+  border-radius: 1.25rem;
+  background-color: var(--background) !important;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.btn-primary {
+    background-color: var(--primary) !important;
+    span {
+        color: var(--accent) !important;
+    }
+}
+.example-card {
+  max-width: 425px;
+  margin: 0 14px;
+  overflow: hidden;
+  h4 {
+    font-size: 3rem;
+    margin: 0;
+    color: var(--primary);
+  }
+  small {
+    color: var(--primary);
+  }
+}
+
+.example-header-image {
+  background-image: url('https://cdn-icons-png.freepik.com/512/6833/6833605.png');
+  background-size: cover;
+}

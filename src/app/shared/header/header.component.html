@@ -1,0 +1,16 @@
+<div class="containre-fluid">
+  <mat-toolbar class="custom-toolbar">
+    <button mat-button>Home</button>
+    <button mat-button>Features</button>
+  
+    <button mat-button [matMenuTriggerFor]="projectsMenu">Projects</button>
+    <mat-menu #projectsMenu="matMenu">
+      <button mat-menu-item disabled class="menu-header">Components</button>
+      <button mat-menu-item>Blocks</button>
+      <button mat-menu-item>UI Kit</button>
+      <button mat-menu-item>Templates</button>
+    </mat-menu>
+  
+    <button mat-button>Contact</button>
+  </mat-toolbar>
+</div>
